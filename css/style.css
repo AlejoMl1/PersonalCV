@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+
+#main {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: url("../images/bgf.jpg");
+    background-size: 1900px;
+    /* background-position: right bottom; */
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    /* If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.  */
+    z-index: 1;
+}
+
+.menu {
+    display: flex
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.lang {
+    color: #292929;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+    font-family: Poppins;
+}
+
+.menu li a:hover,
+.active {
+    background-color: #292929;
+    /* The !important rule in CSS is used to add more importance to a property/value than normal.
+
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
+    color: #ffffffff !important;
+    font-weight: 600;
+    transition: all ease 0.5s;
+
+}
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    /* !* to practice transform */
+    /* https://www.youtube.com/watch?v=rzD-cPhq02E */
+    /* the first argument is the X direction and the second the Y direction */
+    /* -20% of its own width */
+    transform: translate(-20%, -50%);
+
+}
+
+.name p:nth-child(1),
+.name .details {
+    color: #6c707c;
+    font-size: 16px;
+}
+
+.name h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #292929;
+}
+
+.cv-btn {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    background-color: #292929;
+    color: #ffffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cv-btn:hover {
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
