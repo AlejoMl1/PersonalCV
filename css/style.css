@@ -19,7 +19,7 @@ a {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #edf1fd;
+    /* background-color: #edf1fd; */
     position: relative;
     background-image: url("../images/bgf.jpg");
     background-size: 1900px;
@@ -208,4 +208,61 @@ h2 {
 .about-text p {
     font-size: 1.2rem;
     color: rgba(251, 251, 251, 0.90)
+}
+
+.skills {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    /* display: flex; */
+
+    left: 20%;
+    top: 50%;
+
+    /* !* to practice transform */
+    /* https://www.youtube.com/watch?v=rzD-cPhq02E */
+    /* the first argument is the X direction and the second the Y direction */
+    /* -20% of its own width */
+    transform: translate(-20%, -50%);
+
+    background-color: #edf1fd;
+
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    /* max-width: 68.75rem;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    padding: 80px;
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #292929;
+
+}
+
+.skills-wrapper img {
+    padding: 1rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #ffffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px #aaffce;
+    padding: 20px;
+    margin: 10px;
 }
