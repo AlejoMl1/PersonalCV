@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #161616;
+    background-color: black;
 
 }
 
@@ -23,10 +23,17 @@ a {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+
     /* background-color: #edf1fd; */
-    position: relative;
-    background-image: url("../images/bgf.jpg");
-    background-size: 90%;
+    /* display: grid; */
+    /* position: relative; */
+    /* //photo in suit */
+
+    overflow: hidden;
+    background-color: #f4f7ff;
     /* background-position: right bottom; */
 
 }
@@ -73,6 +80,10 @@ nav {
     font-family: Poppins;
 }
 
+.toggle {
+    display: none;
+}
+
 .menu li a:hover,
 .active {
     background-color: #292929;
@@ -87,19 +98,74 @@ In fact, if you use the !important rule, it will override ALL previous styling r
 
 .name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 500px;
-    position: absolute;
-    left: 20%;
-    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    /* grid-template-rows: repeat(auto-fit, minMax(10px, 1fr)); */
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    box-sizing: border-box;
+    justify-self: center;
+    align-self: center;
+    grid-template-rows: repeat;
+    overflow: hidden;
+
+    /* position: absolute; */
+    /* left: 20%;
+    top: 50%; */
+    /* margin-left: 20px;
+    margin-top: 100px; */
     /* !* to practice transform */
     /* https://www.youtube.com/watch?v=rzD-cPhq02E */
     /* the first argument is the X direction and the second the Y direction */
     /* -20% of its own width */
-    transform: translate(-20%, -50%);
+    /* transform: translate(-20%, -50%); */
 
 }
 
-.name p:nth-child(1),
+.name_contain {
+    display: grid;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    grid-column: 2/3;
+    grid-row: 3/8;
+    overflow: hidden;
+}
+
+.name_right {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    /* background-color: purple; */
+    /* background-image: url("../images/bgf.jpg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;*/
+}
+
+.name_right img {
+    /* width: 90%;
+    height: 90%; */
+    object-fit: fill;
+
+}
+
+
+*/ .name p:nth-child(1),
 .name .details {
     color: #6c707c;
     font-size: 16px;
@@ -130,20 +196,39 @@ In fact, if you use the !important rule, it will override ALL previous styling r
 }
 
 .social {
-    position: absolute;
+    /* position: absolute;
     left: 50px;
-    bottom: 50px;
+    bottom: 50px; */
     display: flex;
+    grid-row: 8/9;
+    grid-column: 2/3;
+    align-items: end;
+    align-self: end;
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+
     /* letter-spacing: 30px; */
 }
 
 .social a {
-    margin: 6px 12px;
+    margin: 7px 15px;
+    /* gap: 5px; */
+    cursor: pointer;
+    display: flex;
+
+
 }
 
 .social i {
     color: rgba(18, 17, 17, 0.4);
     font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: start;
+    justify-content: start;
+    object-fit: contain;
 }
 
 .social a:hover i {
@@ -212,8 +297,13 @@ h2 {
 }
 
 .about-text p {
-    font-size: 1.2rem;
-    color: rgba(251, 251, 251, 0.90)
+    font-size: 1.3rem;
+    color: rgba(251, 251, 251, 0.90);
+    letter-spacing: 2.2px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 40px;
+
 }
 
 .skills {
