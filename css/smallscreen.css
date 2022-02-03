@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 999px) {
 
     body,
     html {
@@ -489,12 +489,10 @@
         border-left: 5px solid rgba(255, 255, 255, 0.08);
     }
 
-    .btn-submit {
-        width: 100%;
-    }
+
 
     .btn-submit button {
-        width: 100%;
+        width: 50%;
     }
 
     .c-l-heading {
@@ -551,30 +549,6 @@
 
     }
 
-    .contact-right textarea {
-        justify-content: center;
-        height: 410px;
-        width: 95% !important;
-        border: 0.5px outline#17d1ac;
-        border-style: dashed;
-        outline: none;
-        background-color: transparent;
-        box-sizing: border-box;
-        padding: 5px;
-        font-size: 16px;
-        color: #292929;
-        /* margin-top: 15px; */
-        margin: 15px auto;
-
-    }
-
-    .contact-right textarea::placeholder {
-        color: #ad218f;
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    }
 
     .btn-submit {
         margin: 0px auto;
@@ -596,10 +570,6 @@
         letter-spacing: 2px;
         border-radius: 5px;
         margin-bottom: 20px;
-    }
-
-    .about-text2 {
-        display: none;
     }
 
     #contact-form {
@@ -624,8 +594,8 @@
     }
 
     .contact-right {
-        /* width: 60%;
-        height: 100%; */
+        width: 100%;
+        /* height: 100%; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -650,56 +620,10 @@
 
     }
 
-    .f-email,
-    .f-name {
-        display: flex;
-        flex-direction: column;
-        /* text-align: center; */
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 22px;
-        margin: 5px 0px;
-
-    }
-
-    .f-email input,
-    .f-name input {
-        height: 2rem;
-        width: 250px;
-        border: none;
-        outline: none;
-        background-color: transparent;
-        border-bottom: 1px solid #929292;
-        margin: 10px 0px;
-    }
-
-    .f-email input::placeholder,
-    .f-name input::placeholder {
-        opacity: 0.6;
-        letter-spacing: 1px;
-
-    }
-
-    .f-email input:focus,
-    .f-name input:focus {
-        border-bottom: 1.2px solid #17d1ac;
-        transition: all ease 0.5s;
-    }
-
-    .message {
-        font-size: 18px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        /* border: 2px solid red; */
-        width: 100%;
-
-    }
-
     .contact-right textarea {
         justify-content: center;
-        /* height: 410px; */
-        /* width: 95% !important; */
+        height: 150px;
+        width: 65%;
         border: 0.5px outline#17d1ac;
         border-style: dashed;
         outline: none;
@@ -728,7 +652,7 @@
     }
 
     .contact-right button {
-        width: 95%;
+        width: 65%;
         height: 30px;
         background-color: #1ed98b;
         font-weight: bold;
@@ -743,7 +667,4 @@
         margin-bottom: 20px;
     }
 
-    .about-text2 {
-        display: none;
-    }
 }
